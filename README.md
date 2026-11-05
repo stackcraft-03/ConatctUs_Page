@@ -33,3 +33,74 @@ def safety_net(text) -> str:
     text = ZERO_WIDTH.sub("", text)
     return re.sub(r"\s+", " ", text).strip()
 Refine (patterns): keep a short BOILERPLATE list and the duplicate check for what trafilatura missed. The audit script from earlier shows what that is, and the list will be much shorter than it is today.
+
+-------------------------------------------------------------
+
+how this works i ahave noidea of Opensearch working&#x20;
+
+
+
+how these diffrent are stored together ?
+
+
+
+# 2. How to link news under the same event
+
+Consider these three articles:
+
+|   |
+| - |
+
+Source
+
+|   |
+| - |
+
+Headline
+
+|   |
+| - |
+
+BBC
+
+|   |
+| - |
+
+Explosion reported in Islamabad
+
+|   |
+| - |
+
+Reuters
+
+|   |
+| - |
+
+Blast damages building in Pakistan's capital
+
+|   |
+| - |
+
+Dawn
+
+|   |
+| - |
+
+Rescue teams respond to Islamabad explosion
+
+They have different headlines, but potentially report the same incident.
+
+You should not rely on exact headline matching.
+
+Instead, use a combination of:
+
+1. Text similarity.
+2. Semantic similarity.
+3. Named entities (people, organizations, locations).
+4. Event date/time.
+5. News category.
+6. Event-specific context.
+
+
+
+does any LLM is involved ?
