@@ -36,6 +36,19 @@ Refine (patterns): keep a short BOILERPLATE list and the duplicate check for wha
 
 -------------------------------------------------------------
 
+
+I am creating csvs from 
+raw news (title , summary, full_article, date, source etc ) then catgorize ( newsCatgory, eventIdentifed)
+
+now my goal is to link news under the same event 
+
+On the UI want to show varcity of a event:  
+event heading below the news related to event along with the source 
+
+currently pushing the full csv raw + catgorize columns combined in OpenSerach 
+
+Will need to use Opensearch to fullfill the Varacity or else and if Openserach how the FastAPI endpoint fetches from OpenSearch
+
 how this works i ahave noidea of Opensearch working&#x20;
 
 
